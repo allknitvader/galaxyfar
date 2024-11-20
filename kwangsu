@@ -1,0 +1,12 @@
+def cm_to_kwangsu(cm):
+    # 1광수 = 190cm
+    KWANGSU_UNIT = 190
+    kwangsu = cm / KWANGSU_UNIT
+    return kwangsu
+
+# 사용자 입력
+cm_value = float(input("센티미터 값을 입력하세요: "))
+kwangsu_value = cm_to_kwangsu(cm_value)
+
+# 결과 출력
+print(f"{cm_value}cm는 {kwangsu_value:.4f} 광수입니다.")
